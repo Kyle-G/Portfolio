@@ -1,8 +1,14 @@
+/* general styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+
+/* navbar */
 
 .navbar-container {
     display: flex;
@@ -23,10 +29,82 @@
 
 .navbar-list li a {
     text-decoration: none;
-    list-style-type: none;
     color: black;
     padding: 10px 15px;
     font-size: 1.55vw;
     color: white;
     margin: 0 30px;
+}
+
+
+/* about-me */
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px;
+    background-color: #488286;
+}
+
+.about-me-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-container h1 {
+    font-size: 36px;
+}
+
+.about-me-container p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.about-me-container img {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+
+/* SKILLS SECTION */
+
+.skills-container {
+    border-bottom: 1px solid rgba(12, 12, 10, 0.1);
+    padding: 4rem 5vw 3rem;
+}
+
+.skills-heading {
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+}
+
+.skills-heading h2 {
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.skills-info-row {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-info ul {
+    list-style: none;
+    margin: 0px 30px;
+}
+
+.skills-info ul li {
+    font-family: 'Jost', sans-serif;
 }
