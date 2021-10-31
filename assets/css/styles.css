@@ -19,6 +19,10 @@
     color: white;
 }
 
+.navbar-container h1 {
+    font-family: 'Jost', sans-serif;
+}
+
 .navbar-list {
     display: flex;
     justify-content: space-between;
@@ -34,6 +38,7 @@
     font-size: 1.55vw;
     color: white;
     margin: 0 30px;
+    font-family: 'Jost', sans-serif;
 }
 
 
@@ -42,8 +47,8 @@
 .about-me-container {
     display: flex;
     justify-content: center;
-    padding: 30px 30px;
-    background-color: #488286;
+    padding: 4rem 5vw 3rem;
+    background-color: #77d5db;
 }
 
 .about-me-hero {
@@ -53,14 +58,17 @@
     align-items: center;
 }
 
-.about-me-container h1 {
-    font-size: 36px;
+.about-me-container h2 {
+    font-size: 42px;
+    font-family: 'Jost', sans-serif;
 }
 
 .about-me-container p {
     text-align: center;
     margin-top: 20px;
     font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
 }
 
 .about-me-container img {
@@ -91,13 +99,14 @@
     letter-spacing: .3rem;
     line-height: 1.2;
     text-transform: uppercase;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 
 .skills-info-row {
     margin-top: 32px;
     display: flex;
     justify-content: center;
+    margin-left: 120px;
 }
 
 .skills-info ul {
@@ -107,4 +116,133 @@
 
 .skills-info ul li {
     font-family: 'Jost', sans-serif;
+}
+
+
+/* recent work */
+
+.recent-work-container {
+    border-bottom: 1px solid rgba(12, 12, 10, 0.1);
+    padding: 4rem 5vw 3rem;
+    background-color: #fafafab9;
+    font-family: 'Jost', sans-serif;
+}
+
+.recent-work-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.recent-work-heading h2 {
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+}
+
+.work-row {
+    display: flex;
+    margin-bottom: 50px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.work-col {
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-self: center;
+}
+
+.work-image {
+    padding: 5px;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #7b7d81;
+}
+
+.image-container:hover .overlay {
+    opacity: .95;
+    cursor: pointer;
+}
+
+.text {
+    margin-top: 30px;
+    color: white;
+    line-height: 1.5;
+    margin-left: 30px;
+}
+
+.text h3 {
+    font-size: 24px;
+    border-bottom: 1px solid #aaa;
+    width: 90%;
+}
+
+.outer-ul {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.inner-ul {
+    margin-left: 40px;
+    list-style-type: circle;
+}
+
+
+/* contact me section */
+
+.contact-me-container {
+    padding: 4rem 5vw 3rem;
+    background-color: #fafafa00;
+    font-family: 'Jost', sans-serif;
+}
+
+.contact-me-heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contact-me-heading h2 {
+    font-size: 42px;
+    font-family: 'Jost', sans-serif;
+}
+
+.email-row {
+    display: flex;
+    justify-content: center;
+}
+
+.email-row img {
+    height: 600px;
+    max-width: 100%;
+}
+
+.email-row ul {
+    list-style: none;
+}
+
+.email-row ul li img {
+    width: 50px;
+    height: 50px;
 }
