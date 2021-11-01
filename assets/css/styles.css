@@ -115,7 +115,7 @@ html {
 
 .skills-info ul {
     list-style: none;
-    margin: 0px 30px;
+    margin-right: 120px;
 }
 
 .skills-info ul li {
@@ -375,22 +375,27 @@ html {
     .navbar-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+    }
+    .navbar-container h1 {
+        font-family: 'Jost', sans-serif;
+        margin-left: 20px;
     }
     .navbar-list {
-        width: 50%;
-        margin-left: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .about-me-container h2 {
-        font-size: 20px;
+        font-size: 30px;
+    }
+    .about-me-container P {
+        font-size: 18px;
         font-family: 'Jost', sans-serif;
     }
-    .skills-heading {
-        margin-left: 50px;
-    }
     .skills-info-row {
-        margin-right: 200px;
         flex-wrap: nowrap;
+        margin-left: 0px;
     }
     .skills-info {
         flex-wrap: nowrap;
@@ -410,23 +415,36 @@ html {
     .navbar-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
-    .navbar-list {
-        width: 50%;
-        margin-left: 75px;
+    .navbar-container h1 {
+        font-family: 'Jost', sans-serif;
+        margin-left: 20px;
     }
     .about-me-hero h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
     .about-me-hero p {
         font-size: 12px;
     }
-    .skills-heading {
-        margin-left: 50px;
-    }
     .skills-info ul {
         margin-left: 0px;
-        margin-right: 70px;
+        margin-right: 0px;
+    }
+    .skills-info {
+        width: 100%;
+    }
+    .text h3 {
+        font-size: 20px;
+    }
+    .outer-ul {
+        margin-top: 30px;
+        list-style: none;
+        font-size: 15px;
+    }
+    .inner-ul {
+        margin-left: 40px;
+        list-style-type: circle;
+        font-size: 10px;
     }
 }
